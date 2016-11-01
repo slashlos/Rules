@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F4096A11DC7B38A008FDD35 /* Rules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4096971DC7B38A008FDD35 /* Rules.framework */; };
+		0F4096A61DC7B38A008FDD35 /* RulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4096A51DC7B38A008FDD35 /* RulesTests.m */; };
+		0F4096A81DC7B38A008FDD35 /* Rules.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F40969A1DC7B38A008FDD35 /* Rules.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4096B81DC7B597008FDD35 /* Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4096B61DC7B597008FDD35 /* Rules.m */; };
+		0F4096DA1DC7E233008FDD35 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4096CE1DC7B72D008FDD35 /* FMDB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F4096A21DC7B38A008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F40968E1DC7B38A008FDD35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F4096961DC7B38A008FDD35;
+			remoteInfo = Rules;
+		};
+		0F4096C31DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		0F4096C51DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		0F4096C71DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF5D041618416BB2008C5AA9;
+			remoteInfo = Tests;
+		};
+		0F4096C91DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		0F4096CB1DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		0F4096CD1DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		0F4096D81DC7E21E008FDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C73F0A1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F4096971DC7B38A008FDD35 /* Rules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F40969A1DC7B38A008FDD35 /* Rules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rules.h; sourceTree = "<group>"; };
+		0F40969B1DC7B38A008FDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4096A01DC7B38A008FDD35 /* RulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4096A51DC7B38A008FDD35 /* RulesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulesTests.m; sourceTree = "<group>"; };
+		0F4096A71DC7B38A008FDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4096B11DC7B3EF008FDD35 /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = SOURCE_ROOT; };
+		0F4096B21DC7B3EF008FDD35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0F4096B61DC7B597008FDD35 /* Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rules.m; sourceTree = "<group>"; };
+		0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../fmdb/fmdb.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F4096931DC7B38A008FDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4096DA1DC7E233008FDD35 /* FMDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F40969D1DC7B38A008FDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4096A11DC7B38A008FDD35 /* Rules.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F40968D1DC7B38A008FDD35 = {
+			isa = PBXGroup;
+			children = (
+				0F4096B91DC7B725008FDD35 /* SubProjects */,
+				0F4096991DC7B38A008FDD35 /* Rules */,
+				0F4096A41DC7B38A008FDD35 /* RulesTests */,
+				0F4096981DC7B38A008FDD35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F4096981DC7B38A008FDD35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F4096971DC7B38A008FDD35 /* Rules.framework */,
+				0F4096A01DC7B38A008FDD35 /* RulesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F4096991DC7B38A008FDD35 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				0F4096B11DC7B3EF008FDD35 /* LICENCE.md */,
+				0F4096B21DC7B3EF008FDD35 /* README.md */,
+				0F40969A1DC7B38A008FDD35 /* Rules.h */,
+				0F4096B61DC7B597008FDD35 /* Rules.m */,
+				0F40969B1DC7B38A008FDD35 /* Info.plist */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		0F4096A41DC7B38A008FDD35 /* RulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F4096A51DC7B38A008FDD35 /* RulesTests.m */,
+				0F4096A71DC7B38A008FDD35 /* Info.plist */,
+			);
+			path = RulesTests;
+			sourceTree = "<group>";
+		};
+		0F4096B91DC7B725008FDD35 /* SubProjects */ = {
+			isa = PBXGroup;
+			children = (
+				0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */,
+			);
+			name = SubProjects;
+			sourceTree = "<group>";
+		};
+		0F4096BB1DC7B72D008FDD35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F4096C41DC7B72D008FDD35 /* fmdb */,
+				0F4096C61DC7B72D008FDD35 /* libFMDB.a */,
+				0F4096C81DC7B72D008FDD35 /* Tests.xctest */,
+				0F4096CA1DC7B72D008FDD35 /* libFMDB-IOS.a */,
+				0F4096CC1DC7B72D008FDD35 /* FMDB.framework */,
+				0F4096CE1DC7B72D008FDD35 /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F4096941DC7B38A008FDD35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4096A81DC7B38A008FDD35 /* Rules.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F4096961DC7B38A008FDD35 /* Rules */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4096AB1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "Rules" */;
+			buildPhases = (
+				0F4096921DC7B38A008FDD35 /* Sources */,
+				0F4096931DC7B38A008FDD35 /* Frameworks */,
+				0F4096941DC7B38A008FDD35 /* Headers */,
+				0F4096951DC7B38A008FDD35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F4096D91DC7E21E008FDD35 /* PBXTargetDependency */,
+			);
+			name = Rules;
+			productName = Rules;
+			productReference = 0F4096971DC7B38A008FDD35 /* Rules.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0F40969F1DC7B38A008FDD35 /* RulesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4096AE1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "RulesTests" */;
+			buildPhases = (
+				0F40969C1DC7B38A008FDD35 /* Sources */,
+				0F40969D1DC7B38A008FDD35 /* Frameworks */,
+				0F40969E1DC7B38A008FDD35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F4096A31DC7B38A008FDD35 /* PBXTargetDependency */,
+			);
+			name = RulesTests;
+			productName = RulesTests;
+			productReference = 0F4096A01DC7B38A008FDD35 /* RulesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F40968E1DC7B38A008FDD35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Carlos D. Santiago";
+				TargetAttributes = {
+					0F4096961DC7B38A008FDD35 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J3VNR8UWPP;
+						ProvisioningStyle = Automatic;
+					};
+					0F40969F1DC7B38A008FDD35 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J3VNR8UWPP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0F4096911DC7B38A008FDD35 /* Build configuration list for PBXProject "Rules" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F40968D1DC7B38A008FDD35;
+			productRefGroup = 0F4096981DC7B38A008FDD35 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0F4096BB1DC7B72D008FDD35 /* Products */;
+					ProjectRef = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0F4096961DC7B38A008FDD35 /* Rules */,
+				0F40969F1DC7B38A008FDD35 /* RulesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F4096C41DC7B72D008FDD35 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 0F4096C31DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F4096C61DC7B72D008FDD35 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 0F4096C51DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F4096C81DC7B72D008FDD35 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 0F4096C71DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F4096CA1DC7B72D008FDD35 /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = 0F4096C91DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F4096CC1DC7B72D008FDD35 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 0F4096CB1DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F4096CE1DC7B72D008FDD35 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 0F4096CD1DC7B72D008FDD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F4096951DC7B38A008FDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F40969E1DC7B38A008FDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F4096921DC7B38A008FDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4096B81DC7B597008FDD35 /* Rules.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F40969C1DC7B38A008FDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4096A61DC7B38A008FDD35 /* RulesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F4096A31DC7B38A008FDD35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F4096961DC7B38A008FDD35 /* Rules */;
+			targetProxy = 0F4096A21DC7B38A008FDD35 /* PBXContainerItemProxy */;
+		};
+		0F4096D91DC7E21E008FDD35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB MacOS";
+			targetProxy = 0F4096D81DC7E21E008FDD35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F4096A91DC7B38A008FDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/GitHub/fmdb/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F4096AA1DC7B38A008FDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/GitHub/fmdb/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F4096AC1DC7B38A008FDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Rules/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.Rules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0F4096AD1DC7B38A008FDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Rules/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.Rules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0F4096AF1DC7B38A008FDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				INFOPLIST_FILE = RulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.RulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F4096B01DC7B38A008FDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				INFOPLIST_FILE = RulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.RulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F4096911DC7B38A008FDD35 /* Build configuration list for PBXProject "Rules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4096A91DC7B38A008FDD35 /* Debug */,
+				0F4096AA1DC7B38A008FDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4096AB1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "Rules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4096AC1DC7B38A008FDD35 /* Debug */,
+				0F4096AD1DC7B38A008FDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4096AE1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "RulesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4096AF1DC7B38A008FDD35 /* Debug */,
+				0F4096B01DC7B38A008FDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F40968E1DC7B38A008FDD35 /* Project object */;
+}
