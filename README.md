@@ -93,14 +93,14 @@ To use the Rules in an app, drag the Rules project into your project. You will n
 
 The path to this sub-project is currently noted at ~/GitHub/fmdb; update to where you place yours.
 
-Weather Category Methods
+Rules Category Methods
 --------------------------
 
 Rules extends several classes with following methods:
 
 NSMutableArray
 --------------------------
-- (void)addRule:(NSString *)name description:(NSString *)type formula:(NSString *)formula using:(NSDictionary *)args;
+- (void)addRule:(NSString *)name text:(NSString *)text formula:(NSString *)formula using:(NSDictionary *)args;
 
 	adds a new rule; type is currently a string but also is a nice placeholder for a handy object.  Each rule is an NSMutableDictionary object, since each contains a state flag which can be updated.
 
@@ -112,7 +112,7 @@ NSArray
 
 NSMutableDictionary
 --------------------------
-- (void)addRule:(NSString *)name description:(NSString *)type formula:(NSString *)formula using:(NSDictionary *)args;
+- (void)addRule:(NSString *)name text:(NSString *)text formula:(NSString *)formula using:(NSDictionary *)args;
 - (BOOL)evaluate;
 	evaluations a single rule (NSMutableDictionary)
 
