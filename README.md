@@ -128,7 +128,7 @@ Rules makes use of the FMDatabase Framework package found also on github:
 Release Notes
 ----------------
 
-Version 0.0
+Version 0.1
 
 - Initial release
 
