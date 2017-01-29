@@ -15,7 +15,7 @@ NSString * DebugDatabase = @"debugDatabase";
 {
 	NSMutableDictionary * rets = [[NSMutableDictionary alloc] init];
 	FMResultSet * rs = nil;
-	
+
 	if ((rs = [self executeQuery:sql withParameterDictionary:args]))
 	{
 		NSMutableArray * rows = [[NSMutableArray alloc] init];
@@ -113,7 +113,7 @@ NSString * DebugDatabase = @"debugDatabase";
 									@"args"		: args,
 									@"state"	: @0
 								   }];
-	
+
 	//	Initially all statement evaluations are false
 	self[name] = rule;
 }
@@ -146,7 +146,7 @@ NSString * DebugDatabase = @"debugDatabase";
 			{
 				SEL getter = NSSelectorFromString(value[@"getter"]);
 				id  target = value[@"target"];
-				
+
 				//	http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown
 				if ([target respondsToSelector:getter])
 					args[key] = ((id (*)(id,SEL))[target methodForSelector:getter])(target, getter);
@@ -160,7 +160,7 @@ NSString * DebugDatabase = @"debugDatabase";
 		proofed &= [rule[@"state"] boolValue];
 	}
 
-	
+
 	return proofed;
 }
 @end
