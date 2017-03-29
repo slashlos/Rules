@@ -130,36 +130,32 @@ NSString * DebugDatabase = @"debugDatabase";
 
 	//	Evaluate our rule via sqlite3; de-reference NSDictionary values
 	//	to simple scalar numeric and return back our evaluation value
-	for (NSString * name in self.allKeys)
+
+	//	Fetch formula and args
+	NSMutableDictionary * args = [NSMutableDictionary dictionaryWithDictionary:self[@"args"]];
+	NSString * stmt = [NSString stringWithFormat:@"select %@;", self[@"rule"]];
+
+	for (NSString * key in [args allKeys])
 	{
-		NSMutableDictionary * rule = self[name];
+		id value = args[key];
 
-		//	Fetch formula and args
-		NSMutableDictionary * args = [NSMutableDictionary dictionaryWithDictionary:self[@"args"]];
-		NSString * stmt = [NSString stringWithFormat:@"select %@;", rule[@"rule"]];
-
-		for (NSString * key in [args allKeys])
+		if ([value isKindOfClass:[NSDictionary class]])
 		{
-			id value = args[key];
+			SEL getter = NSSelectorFromString(value[@"getter"]);
+			id  target = value[@"target"];
 
-			if ([value isKindOfClass:[NSDictionary class]])
-			{
-				SEL getter = NSSelectorFromString(value[@"getter"]);
-				id  target = value[@"target"];
-
-				//	http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown
-				if ([target respondsToSelector:getter])
-					args[key] = ((id (*)(id,SEL))[target methodForSelector:getter])(target, getter);
-				else
-					args[key] = @(0);
-			}
+			//	http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown
+			if ([target respondsToSelector:getter])
+				args[key] = ((id (*)(id,SEL))[target methodForSelector:getter])(target, getter);
+			else
+				args[key] = @(0);
 		}
-
-		rs = [db doQuery:stmt withParameterDictionary:args];
-		rule[@"state"] = rs[@"result"];
-		proofed &= [rule[@"state"] boolValue];
 	}
 
+	rs = [db doQuery:stmt withParameterDictionary:args];
+	proofed = YES == [rs[@"result"] boolValue] && NO == [rs[@"lastErrorCode"] integerValue];
+
+	self[@"state"] = rs[@"result"];
 
 	return proofed;
 }
