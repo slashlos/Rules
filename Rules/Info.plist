@@ -16,8 +16,14 @@
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>Mach-OLC_VERSION_MIN </key>
+	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Carlos D. Santiago. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
