@@ -153,10 +153,16 @@ NSString * DebugDatabase = @"debugDatabase";
 	}
 
 	rs = [db doQuery:stmt withParameterDictionary:args];
-	proofed = YES == [rs[@"result"] boolValue] && NO == [rs[@"lastErrorCode"] integerValue];
+	if ((proofed = (YES == [rs[@"result"] boolValue] && NO == [rs[@"lastErrorCode"] integerValue])))
+	{
+		//	We just want the value for the evaluated rule
+		self[@"state"] = [[rs[@"rows"] valueForKeyPath:self[@"rule"]] firstObject];
+	}
+	else
+	{
+		self[@"state"] = @(0);
+	}
 
-	self[@"state"] = rs[@"result"];
-
-	return proofed;
+	return proofed && [self[@"state"] boolValue];
 }
 @end
