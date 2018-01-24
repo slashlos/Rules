@@ -52,22 +52,22 @@ then using Rules to create some rules
 	//	Rule involving scalars
 	[rules addRule:@"scalars";
 			  text:@"simple scalars"
-		   formula:@":c = :a + :b"
+		    formula:@":c = :a + :b"
 			 using:@{
-					@"a" : @(a),
-					@"b" : @(b),
-					@"c" : @(c)
-					}];
+				 @"a" : @(a),
+				 @"b" : @(b),
+				 @"c" : @(c)
+				}];
 
 	//	Rule involving object ivar(s)
 	[rules addRule:@"ivars";
-			  text:@"simple scalars"
-		formula:@":c = :a + :b"
-			 using:@{
-					@"a" : @{@"target":myRec, @"getter":@"a"},
-					@"b" : @{@"target":myRec, @"getter":@"b"},
-					@"c" : @{@"target":myRec, @"getter":@"c"}
-					}];
+		  text:@"simple scalars"
+	       formula:@":c = :a + :b"
+		 using:@{
+			 @"a" : @{@"target":myRec, @"getter":@"a"},
+			 @"b" : @{@"target":myRec, @"getter":@"b"},
+			 @"c" : @{@"target":myRec, @"getter":@"c"}
+			}];
 
 now evaluate them at once which all should proof
 
@@ -127,6 +127,9 @@ Rules makes use of the FMDatabase Framework package found also on github:
     
 Release Notes
 ----------------
+
+Version 0.3
+- fixed evalaute re: statement result
 
 Version 0.1
 
