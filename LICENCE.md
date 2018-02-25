@@ -1,7 +1,7 @@
 Rules
 version 0.0, October 31, 2016
 
-Copyright (C) 2016 Carlos David Manual Santiago
+Copyright (C) 2018 Carlos David Manual Santiago
 
 This software is provided 'as-is', without any express or implied
 warranty.  In no event will the authors be held liable for any damages

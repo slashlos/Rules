@@ -17,7 +17,20 @@ Each value within the args dictionary represents a single value. i.e, these two 
 	@"a" : @{@"target":myRec, @"getter":@"a"}
 	@"a" : @"myRec.a"
 
-If an arg's 'value' is dictionary, it will be searched for a 'target' and 'getter' value. Otherwise, the value is presumed to be a scalar.
+If an arg's 'value' is dictionary, it will be searched for a 'target' and 'getter' value. Otherwise, the value is presumed to be a scalar.  To facilitate the observation of rule values two methods are provided:
+
+    - (NSDictionary *)addRulesObserver:(NSObject *)observer;
+    
+        this method returns an observing dictionary of observed rules argument values
+        
+    - (BOOL)unobserveRules;
+    
+        this method unobserved rules found in an observation dictionary.
+        
+Each observing dictionary key value - "getter" must have defined its
+        
+    target   - target object observed
+    observer - observing target object
 
 For rule batch processing, from an array or check book, or the processing of rules or a single rule the NSMutableDicionary -evaluate method returns whether the rule(s) proof to be true.
 
@@ -128,11 +141,13 @@ Rules makes use of the FMDatabase Framework package found also on github:
 Release Notes
 ----------------
 
+Version 0.4
+- added observation methods
+
 Version 0.3
 - fixed evalaute re: statement result
 
 Version 0.1
-
 - Initial release
 
 /los

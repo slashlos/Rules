@@ -3,7 +3,7 @@
 //  Rules
 //
 //  Created by Carlos D. Santiago on 10/31/16.
-//  Copyright © 2016 Carlos D. Santiago. All rights reserved.
+//  Copyright © 2016-2018 Carlos D. Santiago. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -48,5 +48,10 @@ APPKIT_EXTERN NSString * DebugDatabase;
 		formula:(NSString *)formula
 		  using:(NSDictionary *)args;
 - (BOOL)evaluate;
+@end
+
+@interface NSDictionary (Rules)
+- (NSDictionary *)addRulesObserver:(NSObject *)observer;
+- (BOOL)unobserveRules;
 @end
 
