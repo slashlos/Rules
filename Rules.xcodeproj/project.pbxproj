@@ -71,6 +71,13 @@
 			remoteGlobalIDString = 83C73F0A1C326ADA00FFC730;
 			remoteInfo = "FMDB MacOS";
 		};
+		0FCE3FCD2076DC1800F466C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CD2426D1FCC09CA00479FDE;
+			remoteInfo = "FMDB watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +170,7 @@
 				0F4096CA1DC7B72D008FDD35 /* libFMDB-IOS.a */,
 				0F4096CC1DC7B72D008FDD35 /* FMDB.framework */,
 				0F4096CE1DC7B72D008FDD35 /* FMDB.framework */,
+				0FCE3FCE2076DC1800F466C1 /* FMDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +232,7 @@
 		0F40968E1DC7B38A008FDD35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Carlos D. Santiago";
 				TargetAttributes = {
 					0F4096961DC7B38A008FDD35 = {
@@ -305,6 +313,13 @@
 			remoteRef = 0F4096CD1DC7B72D008FDD35 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		0FCE3FCE2076DC1800F466C1 /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 0FCE3FCD2076DC1800F466C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -370,6 +385,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -377,6 +393,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,6 +445,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -435,6 +453,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
