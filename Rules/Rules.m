@@ -173,29 +173,29 @@ NSString * DebugDatabase = @"debugDatabase";
 	NSMutableDictionary * obs = [[NSMutableDictionary alloc] init];
 	NSDictionary *args, * vals = nil;
 	id target = nil, getter = nil;
-	
+
 	//	Return dictionary is "getter" keyed, indicating
 	//	its target, its observer, and its rule context.
-	
+
 	for (NSString * keyPath in self.allKeys) {
 		NSDictionary * rule = self[keyPath];
-		
+
 		//	A rule dictionary *must* have an "args" NSDictionary value
 		if (![(args = rule[@"args"]) isKindOfClass:[NSDictionary class]]) {
 			continue;
 		}
-		
+
 		for (NSString * arg in args.allKeys) {
 			// Each args dictionary *must* be an NSDictionary value
 			if (![(vals = args[arg]) isKindOfClass:[NSDictionary class]]) {
 				continue;
 			}
-			
+
 			//	To be observable, each vals dictionary *must* have a "target"
 			if (!(target = vals[@"target"])) {
 				continue;
 			}
-			
+
 			//	Each observation records its getter key, target and observer for its rule
 			getter = vals[@"getter"];
 			[target addObserver:observer forKeyPath:getter options:0 context:(void *)CFBridgingRetain(rule)];
@@ -208,7 +208,7 @@ NSString * DebugDatabase = @"debugDatabase";
 - (BOOL)unobserveRules
 {
 	NSUInteger tally=0;
-	
+
 	//	Cease monitor of rules' value items
 	for (NSString * key in self.allKeys) {
 		@try
@@ -216,7 +216,7 @@ NSString * DebugDatabase = @"debugDatabase";
 			NSDictionary * args = self[key];
 			id target = args[@"target"];
 			id observer = args[@"observer"];
-			
+
 			[target removeObserver:observer forKeyPath:key];
 			++tally;
 		}
@@ -225,7 +225,7 @@ NSString * DebugDatabase = @"debugDatabase";
 			NSLog(@"%@ not unobserved: %@", key, [exception description]);
 		}
 	}
-	
+
 	//	Tell them we've unobsered all
 	return tally == self.count;
 }
