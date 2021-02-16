@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		0F4096A61DC7B38A008FDD35 /* RulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4096A51DC7B38A008FDD35 /* RulesTests.m */; };
 		0F4096A81DC7B38A008FDD35 /* Rules.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F40969A1DC7B38A008FDD35 /* Rules.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F4096B81DC7B597008FDD35 /* Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4096B61DC7B597008FDD35 /* Rules.m */; };
-		0F4096DA1DC7E233008FDD35 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4096CE1DC7B72D008FDD35 /* FMDB.framework */; };
+		0F91A09025DAFC4400978A6C /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0F91A08F25DAFC4400978A6C /* FMDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,62 +21,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0F4096961DC7B38A008FDD35;
 			remoteInfo = Rules;
-		};
-		0F4096C31DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
-			remoteInfo = fmdb;
-		};
-		0F4096C51DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE4290EF12B42F870088BD94;
-			remoteInfo = FMDB;
-		};
-		0F4096C71DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BF5D041618416BB2008C5AA9;
-			remoteInfo = Tests;
-		};
-		0F4096C91DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6290CBB5188FE836009790F8;
-			remoteInfo = "FMDB-IOS";
-		};
-		0F4096CB1DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
-			remoteInfo = "FMDB iOS";
-		};
-		0F4096CD1DC7B72D008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
-			remoteInfo = "FMDB MacOS";
-		};
-		0F4096D81DC7E21E008FDD35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 83C73F0A1C326ADA00FFC730;
-			remoteInfo = "FMDB MacOS";
-		};
-		0FCE3FCD2076DC1800F466C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2CD2426D1FCC09CA00479FDE;
-			remoteInfo = "FMDB watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -90,7 +34,6 @@
 		0F4096B11DC7B3EF008FDD35 /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = SOURCE_ROOT; };
 		0F4096B21DC7B3EF008FDD35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0F4096B61DC7B597008FDD35 /* Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rules.m; sourceTree = "<group>"; };
-		0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../fmdb/fmdb.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4096DA1DC7E233008FDD35 /* FMDB.framework in Frameworks */,
+				0F91A09025DAFC4400978A6C /* FMDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +59,6 @@
 		0F40968D1DC7B38A008FDD35 = {
 			isa = PBXGroup;
 			children = (
-				0F4096B91DC7B725008FDD35 /* SubProjects */,
 				0F4096991DC7B38A008FDD35 /* Rules */,
 				0F4096A41DC7B38A008FDD35 /* RulesTests */,
 				0F4096981DC7B38A008FDD35 /* Products */,
@@ -153,28 +95,6 @@
 			path = RulesTests;
 			sourceTree = "<group>";
 		};
-		0F4096B91DC7B725008FDD35 /* SubProjects */ = {
-			isa = PBXGroup;
-			children = (
-				0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */,
-			);
-			name = SubProjects;
-			sourceTree = "<group>";
-		};
-		0F4096BB1DC7B72D008FDD35 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F4096C41DC7B72D008FDD35 /* fmdb */,
-				0F4096C61DC7B72D008FDD35 /* libFMDB.a */,
-				0F4096C81DC7B72D008FDD35 /* Tests.xctest */,
-				0F4096CA1DC7B72D008FDD35 /* libFMDB-IOS.a */,
-				0F4096CC1DC7B72D008FDD35 /* FMDB.framework */,
-				0F4096CE1DC7B72D008FDD35 /* FMDB.framework */,
-				0FCE3FCE2076DC1800F466C1 /* FMDB.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -201,9 +121,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				0F4096D91DC7E21E008FDD35 /* PBXTargetDependency */,
 			);
 			name = Rules;
+			packageProductDependencies = (
+				0F91A08F25DAFC4400978A6C /* FMDB */,
+			);
 			productName = Rules;
 			productReference = 0F4096971DC7B38A008FDD35 /* Rules.framework */;
 			productType = "com.apple.product-type.framework";
@@ -232,7 +154,7 @@
 		0F40968E1DC7B38A008FDD35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Carlos D. Santiago";
 				TargetAttributes = {
 					0F4096961DC7B38A008FDD35 = {
@@ -255,14 +177,11 @@
 				Base,
 			);
 			mainGroup = 0F40968D1DC7B38A008FDD35;
+			packageReferences = (
+				0F91A08E25DAFC4400978A6C /* XCRemoteSwiftPackageReference "fmdb" */,
+			);
 			productRefGroup = 0F4096981DC7B38A008FDD35 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0F4096BB1DC7B72D008FDD35 /* Products */;
-					ProjectRef = 0F4096BA1DC7B72D008FDD35 /* fmdb.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0F4096961DC7B38A008FDD35 /* Rules */,
@@ -270,58 +189,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0F4096C41DC7B72D008FDD35 /* fmdb */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = fmdb;
-			remoteRef = 0F4096C31DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0F4096C61DC7B72D008FDD35 /* libFMDB.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFMDB.a;
-			remoteRef = 0F4096C51DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0F4096C81DC7B72D008FDD35 /* Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.xctest;
-			remoteRef = 0F4096C71DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0F4096CA1DC7B72D008FDD35 /* libFMDB-IOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFMDB-IOS.a";
-			remoteRef = 0F4096C91DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0F4096CC1DC7B72D008FDD35 /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 0F4096CB1DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0F4096CE1DC7B72D008FDD35 /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 0F4096CD1DC7B72D008FDD35 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0FCE3FCE2076DC1800F466C1 /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 0FCE3FCD2076DC1800F466C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F4096951DC7B38A008FDD35 /* Resources */ = {
@@ -365,11 +232,6 @@
 			target = 0F4096961DC7B38A008FDD35 /* Rules */;
 			targetProxy = 0F4096A21DC7B38A008FDD35 /* PBXContainerItemProxy */;
 		};
-		0F4096D91DC7E21E008FDD35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FMDB MacOS";
-			targetProxy = 0F4096D81DC7E21E008FDD35 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -398,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,6 +322,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -501,7 +365,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Rules/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.Rules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,7 +391,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Rules/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.Rules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,7 +410,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J3VNR8UWPP;
 				INFOPLIST_FILE = RulesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.RulesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,7 +427,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J3VNR8UWPP;
 				INFOPLIST_FILE = RulesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.slashlos.RulesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F91A08E25DAFC4400978A6C /* XCRemoteSwiftPackageReference "fmdb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ccgus/fmdb";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F91A08F25DAFC4400978A6C /* FMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F91A08E25DAFC4400978A6C /* XCRemoteSwiftPackageReference "fmdb" */;
+			productName = FMDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F40968E1DC7B38A008FDD35 /* Project object */;
 }
