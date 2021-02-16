@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "FMDatabase.h"
+#import <FMDB/FMDatabase.h>
 
 //! Project version number for Rules.
 FOUNDATION_EXPORT double RulesVersionNumber;
