@@ -1,0 +1,6 @@
+framework module Pods_Rules {
+  umbrella header "Pods-Rules-umbrella.h"
+
+  export *
+  module * { export * }
+}
