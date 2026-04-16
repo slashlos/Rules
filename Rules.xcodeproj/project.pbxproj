@@ -122,7 +122,6 @@
 				65F6E3BE8E83DAFD24E29959 /* Pods-Rules-RulesTests.debug.xcconfig */,
 				D25A999A2E28428132B65760 /* Pods-Rules-RulesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
