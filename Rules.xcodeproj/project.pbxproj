@@ -190,7 +190,6 @@
 				TargetAttributes = {
 					0F4096961DC7B38A008FDD35 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Manual;
 					};
 					0F40969F1DC7B38A008FDD35 = {
 						CreatedOnToolsVersion = 8.1;
@@ -458,7 +457,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92491DC1A7280D716387D177 /* Pods-Rules.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
@@ -488,7 +488,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 761BD77EF80FFC8FEF12BCE2 /* Pods-Rules.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
