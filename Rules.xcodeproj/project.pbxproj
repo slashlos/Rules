@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,20 +46,16 @@
 /* Begin PBXFrameworksBuildPhase section */
 		0F4096931DC7B38A008FDD35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				891020D65BDFC3D2B6243900 /* Pods_Rules.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0F40969D1DC7B38A008FDD35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0F4096A11DC7B38A008FDD35 /* Rules.framework in Frameworks */,
 				039BF90B19EA5E3714416BF3 /* Pods_Rules_RulesTests.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -130,11 +126,9 @@
 /* Begin PBXHeadersBuildPhase section */
 		0F4096941DC7B38A008FDD35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0F4096A81DC7B38A008FDD35 /* Rules.h in Headers */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
@@ -150,8 +144,6 @@
 				0F4096951DC7B38A008FDD35 /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = Rules;
 			productName = Rules;
@@ -199,7 +191,6 @@
 				};
 			};
 			buildConfigurationList = 0F4096911DC7B38A008FDD35 /* Build configuration list for PBXProject "Rules" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -210,6 +201,7 @@
 			packageReferences = (
 				0FD6C1132F8C3B7E0096DD74 /* XCRemoteSwiftPackageReference "fmdb" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 0F4096981DC7B38A008FDD35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,70 +215,67 @@
 /* Begin PBXResourcesBuildPhase section */
 		0F4096951DC7B38A008FDD35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0F40969E1DC7B38A008FDD35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		5A5A292878D7D4AC7C9390B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Rules-RulesTests-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = (
+				"diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null",
+				"if [ $? != 0 ] ; then",
+				"    # print error to STDERR",
+				"    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2",
+				"    exit 1",
+				"fi",
+				"# This output is used by Xcode 'outputs' to avoid re-running this script phase.",
+				"echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 		A1C612173025EE778223CFD6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Rules-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = (
+				"diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null",
+				"if [ $? != 0 ] ; then",
+				"    # print error to STDERR",
+				"    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2",
+				"    exit 1",
+				"fi",
+				"# This output is used by Xcode 'outputs' to avoid re-running this script phase.",
+				"echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 		D9E198285E06464DF31B2FE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Rules-RulesTests/Pods-Rules-RulesTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
@@ -295,9 +284,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rules-RulesTests/Pods-Rules-RulesTests-frameworks.sh\"\n";
+			shellScript = (
+				"\"${PODS_ROOT}/Target Support Files/Pods-Rules-RulesTests/Pods-Rules-RulesTests-frameworks.sh\"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -305,19 +296,15 @@
 /* Begin PBXSourcesBuildPhase section */
 		0F4096921DC7B38A008FDD35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0F4096B81DC7B597008FDD35 /* Rules.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0F40969C1DC7B38A008FDD35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0F4096A61DC7B38A008FDD35 /* RulesTests.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -330,7 +317,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F4096A91DC7B38A008FDD35 /* Debug */ = {
+		0F4096A91DC7B38A008FDD35 /* Debug configuration for PBXProject "Rules" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		0F4096AA1DC7B38A008FDD35 /* Release */ = {
+		0F4096AA1DC7B38A008FDD35 /* Release configuration for PBXProject "Rules" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -453,11 +440,11 @@
 			};
 			name = Release;
 		};
-		0F4096AC1DC7B38A008FDD35 /* Debug */ = {
+		0F4096AC1DC7B38A008FDD35 /* Debug configuration for PBXNativeTarget "Rules" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92491DC1A7280D716387D177 /* Pods-Rules.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -484,11 +471,11 @@
 			};
 			name = Debug;
 		};
-		0F4096AD1DC7B38A008FDD35 /* Release */ = {
+		0F4096AD1DC7B38A008FDD35 /* Release configuration for PBXNativeTarget "Rules" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 761BD77EF80FFC8FEF12BCE2 /* Pods-Rules.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -515,7 +502,7 @@
 			};
 			name = Release;
 		};
-		0F4096AF1DC7B38A008FDD35 /* Debug */ = {
+		0F4096AF1DC7B38A008FDD35 /* Debug configuration for PBXNativeTarget "RulesTests" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65F6E3BE8E83DAFD24E29959 /* Pods-Rules-RulesTests.debug.xcconfig */;
 			buildSettings = {
@@ -534,7 +521,7 @@
 			};
 			name = Debug;
 		};
-		0F4096B01DC7B38A008FDD35 /* Release */ = {
+		0F4096B01DC7B38A008FDD35 /* Release configuration for PBXNativeTarget "RulesTests" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D25A999A2E28428132B65760 /* Pods-Rules-RulesTests.release.xcconfig */;
 			buildSettings = {
@@ -559,28 +546,25 @@
 		0F4096911DC7B38A008FDD35 /* Build configuration list for PBXProject "Rules" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F4096A91DC7B38A008FDD35 /* Debug */,
-				0F4096AA1DC7B38A008FDD35 /* Release */,
+				0F4096A91DC7B38A008FDD35 /* Debug configuration for PBXProject "Rules" */,
+				0F4096AA1DC7B38A008FDD35 /* Release configuration for PBXProject "Rules" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0F4096AB1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "Rules" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F4096AC1DC7B38A008FDD35 /* Debug */,
-				0F4096AD1DC7B38A008FDD35 /* Release */,
+				0F4096AC1DC7B38A008FDD35 /* Debug configuration for PBXNativeTarget "Rules" */,
+				0F4096AD1DC7B38A008FDD35 /* Release configuration for PBXNativeTarget "Rules" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0F4096AE1DC7B38A008FDD35 /* Build configuration list for PBXNativeTarget "RulesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F4096AF1DC7B38A008FDD35 /* Debug */,
-				0F4096B01DC7B38A008FDD35 /* Release */,
+				0F4096AF1DC7B38A008FDD35 /* Debug configuration for PBXNativeTarget "RulesTests" */,
+				0F4096B01DC7B38A008FDD35 /* Release configuration for PBXNativeTarget "RulesTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
